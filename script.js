@@ -1,11 +1,8 @@
+// Sélectionner l'image (par exemple, avec un ID spécifique ou un sélecteur CSS)
+const maRose = document.getElementById("maRose");
 
-// faire ref à l'image
-let maRose = document.querySelector("img");
-
-// ajouter une action sur l'évent mouseover associé à l'image
-maRose.addEventListener("dblclick", action);
-
-//définir l'action
-function action() {
-    alert("Le riz d'Hélène");
-}
+// Ajouter un événement pour détecter le double-clic
+maRose.addEventListener("dblclick", function () {
+    // Remplacer la source de l'image par une autre
+    maRose.src = "pizza.jpg"; // Remplace "image2.jpg" par le chemin de la nouvelle image
+});
