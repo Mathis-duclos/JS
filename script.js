@@ -1,8 +1,13 @@
-// Sélectionner l'image (par exemple, avec un ID spécifique ou un sélecteur CSS)
-const maRose = document.getElementById("maRose");
+maRose = document.querySelector("img");
 
-// Ajouter un événement pour détecter le double-clic
-maRose.addEventListener("dblclick", function () {
-    // Remplacer la source de l'image par une autre
-    maRose.src = "pizza.jpg"; // Remplace "image2.jpg" par le chemin de la nouvelle image
-});
+maRose.addEventListener("dblclick", toto)
+
+function toto()
+{
+
+    if (maRose.src.endsWith("sushi.jpg"))
+            maRose.src = "pizza.jpg" ;
+    else 
+        maRose.src = "sushi.jpg" ;
+
+}
