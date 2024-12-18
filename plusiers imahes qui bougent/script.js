@@ -52,6 +52,5 @@ console.log(tabFleurs.length); // = 3
 console.log(tabFleurs[tabFleurs.length-1])
 
 // afficher toutes les cellules du tableau de fleurs 
-for(let i =0; i<3; i=i+1){
-    console.log(tabFleurs[i]); 
-}
+for(let i =0; i<tabFleurs.length; i=i+1){
+    console.log(tabFleurs[i]); }
