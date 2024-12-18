@@ -1,10 +1,10 @@
 let tabImg = document.querySelectorAll("img");
 
 document.addEventListener("keydown", function(event) {
-    if (event.key === "ArrowLeft") { 
-        replacePic(); // Appelle la fonction pour la flèche gauche
-    } else if (event.key === "ArrowRight") { 
-        replacePic2(); // Appelle la fonction pour la flèche droite
+    if (event.key == "ArrowLeft") { 
+        replacePic(); // si j'appuie à gauche
+    } else if (event.key == "ArrowRight") { 
+        replacePic2(); //si on appuie à droite
     }
 });
 
