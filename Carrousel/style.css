@@ -1,0 +1,18 @@
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-item.active {
+    /* On garde une seule image affichée à la fois, donc on n'a pas besoin de faire d'animation spéciale ici */
+}
